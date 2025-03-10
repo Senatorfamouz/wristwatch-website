@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirora Footer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        footer {
+            background-color: #222; /* Dark background as in the image */
+            color: #fff; /* White text */
+            padding: 40px 20px; /* Padding for spacing */
+            font-family: Arial, sans-serif; /* Example font, adjust as needed */
+            font-size: 14px; /* Base font size */
+        }
+
+        .footer-container {
+            max-width: 1200px; /* Limit width for larger screens */
+            margin: 0 auto; /* Center the footer */
+            display: flex; /* Use flexbox for layout */
+            justify-content: space-between; /* Distribute space evenly */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .footer-section {
+            flex: 1 1 200px; /* Flexible width for sections */
+            margin-bottom: 20px; /* Space between sections */
+        }
+
+        .footer-section h3 {
+            font-size: 18px; /* Section header size */
+            margin-bottom: 15px; /* Space below header */
+            color: #ccc; /* Slightly lighter header color */
+        }
+
+        .footer-section ul {
+            list-style: none; /* Remove bullet points */
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 8px; /* Space between list items */
+        }
+
+        .footer-section a {
+            color: #aaa; /* Link color */
+            text-decoration: none; /* Remove underlines */
+        }
+
+        .footer-section a:hover {
+            color: #fff; /* Hover color */
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 20px; /* Icon size */
+            color: #aaa;
+        }
+
+        .social-icons a:hover {
+            color: #fff;
+        }
+
+        .custom-products {
+            display: flex; /* Flexbox for product layout */
+            flex-direction: column; /* Stack products vertically */
+        }
+
+        .product {
+            display: flex;
+            align-items: center; /* Align items vertically */
+            margin-bottom: 10px;
+        }
+
+        .product img {
+            width: 60px; /* Product image size */
+            margin-right: 15px;
+        }
+
+        .product-details {
+            flex-grow: 1; /* Allow details to take remaining space */
+        }
+
+        .product-details h4 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .product-details p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+        .bottom-bar {
+            text-align: center; /* Center the bottom bar */
+            padding-top: 20px; /* Space above the bottom bar */
+            border-top: 1px solid #333; /* Separator line */
+            margin-top: 30px; /* Space between sections and bottom bar */
+        }
+
+        .bottom-bar nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex; /* Flexbox for navigation */
+            justify-content: center; /* Center navigation items */
+        }
+
+        .bottom-bar nav li {
+            margin: 0 15px; /* Space between navigation items */
+        }
+
+        .payment-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .payment-icons img {
+            height: 30px; /* Payment icon size */
+            margin: 0 5px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column; /* Stack sections vertically on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Mirora</h3>
+                <p>Address: 123 Main Street, Anytown, CA 12345-USA</p>
+                <p>Phone: (012) 800-456789</p>
+                <p>Fax: (012) 800-456789</p>
+                <p>Email: Contact@plazathemes.com</p>
+                <div class="social-icons">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Gift Certificates</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Extras</h3>
+                <ul>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Gift Certificates</a></li>
+                    <li><a href="#">Affiliate</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Returns</a></li>
+                </ul>
+            </div>
+            <div class="footer-section custom-products">
+                <h3>Custom Products</h3>
+                <div class="product">
+                    <img src="product1.jpg" alt="Product 1">
+                    <div class="product-details">
+                        <h4>Acer Aspire E 15</h4>
+                        <p>$550.00 <del>$700.00</del></p>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Product 2">
+                    <div class="product-details">
+                        <h4>Acer Aspire E 15</h4>
+                        <p>$550.00 <del>$700.00</del></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Online Store</a></li>
+                    <li><a href="#">Promotion</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <p>&copy; Mirora 2021 Made With <i class="fa fa-heart"></i> By HasThemes</p>
+            <div class="payment-icons">
+                <img src="visa.png" alt="Visa">
+                <img src="paypal.png" alt="PayPal">
+                <img src="skrill.png" alt="Skrill">
+                <img src="visa.png" alt="Visa">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

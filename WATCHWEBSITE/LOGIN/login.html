@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirora luxury Watches</title>
+  <link rel="stylesheet" href="/LOGIN/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="login-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="username">Username/Email</label>
+                        <input type="text" id="username" name="username" required>
+                        <div class="error" id="username-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                        <div class="error" id="password-error"></div>
+                    </div>
+                    <button type="submit" class="login-button">Login</button>
+                </form>
+                <div class="signup-link">
+                    Don't have an account? <a href="#">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from reloading the page
+
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Retrieve stored data
+            const storedUser = localStorage.getItem("username");
+            const storedPass = localStorage.getItem("password");
+
+            // Validate credentials
+            if (username === storedUser && password === storedPass) {
+                alert("Login successful!");
+                window.location.href = "/HOMEWEB/home.html"; // Redirect to the home page
+            } else {
+                alert("Invalid credentials. Please try again.");
+            }
+        });
+    </script>
+</body>
+</html>

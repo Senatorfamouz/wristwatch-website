@@ -64,18 +64,19 @@
 .boxes{
     display: flex;
     align-items: center;
-    width: 200px;
+    width: 220px;
     height: 40px;
     justify-content: space-around;
 }
 .box{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     border-radius: 2px;
     border: 2px solid #1d171775;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 .box i{
     font-size: 15px;
@@ -86,12 +87,13 @@
     cursor: pointer;
 }
 .big_box{
-    width: 120px;
-    height: 30px;
+    width: 130px;
+    height: 35px;
     display: flex;
     align-items: center;
     position: relative;
     border: 2px solid #1d171775;
+    margin-left: 10px;
 }
 .big_box h5{
     background-color:  #bb7b0d;
@@ -109,11 +111,14 @@
     color: #ffffffe4;
 }
 .b{
-    align-items: center;
+    align-items: end;
     display: flex;
-    margin-left: 15px;
+    margin-left: 35px;
     font-size: 15px;
-    color: #fff;
+    color: #242424;
+ 
+    /* padding: 20px; */
+    
 }
 .b :hover{
     color: #bb7b0d;
@@ -126,17 +131,17 @@
     align-items: center;
     height: 60px;
     width: 100%;
-    position: static;
+    position: sticky;
     top: 0;
-    /* z-index: 222; */
-    /* border: 1px solid #19181856; */
+    z-index: 222;
     box-shadow: rgba(0, 0, 0, 0.188) 0px 3px 8px;
     background-color: #262626;
+    transform: all transition 0.35ms ease-in-out, top 0.35ms;;
 }
 .navs{
     display: flex;
     align-items: center;
-    margin-left: 350px;
+     margin-left: 450px;         
 }
 .nav{
     margin: 20px;
@@ -381,15 +386,15 @@ hr{
 .with_hr{
     height: 30px;
     width: 100%;
-    background-color: rgb(0, 166, 255);
+    /* background-color: rgb(0, 166, 255); */
     /* padding-bottom: 10px; */
     display: flex;
     align-items: center;
 }
 .hr{
-    width: 770px;
+    width: 750px;
     height: 1px;
-    background-color: red;
+    background-color: #181818;
     margin-left: 12px;
 }
 .blog_house{
@@ -517,6 +522,135 @@ hr{
     display: flex;
     flex-direction: column;
 }
-.arrive h5{
+footer {
+    background-color: #222;
+    color: #fff; 
+    padding: 40px 120px;                        
+    font-family: Arial, sans-serif; 
+    font-size: 12px;                            
+}
+
+.footer-container {
+    width: 100%; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.footer-section {
+    flex: 1 1 200px; 
+    margin-bottom: 20px; 
+    /* line-height: 25px; */
+}
+.styling{
+    color: #ffffffbf;
+    line-height: 25px;
+}
+.footer-section h3 {
+    font-size: 16px;                  
+    margin-bottom: 15px; 
+    color: #ccc; 
+}
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px; 
+    color: #aaa;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+.footer-section ul {
+    list-style: none; 
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px; 
+}
+.footer-section a {
+    color: #aaa; 
+    text-decoration: none; 
+}
+.footer-section a:hover {
+    color: #A8741A;  
+}
+.custom-products {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product img {
+    width: 60px; 
+    margin-right: 15px;
+}
+
+.product-details {
+    flex-grow: 1; 
+}
+
+.product-details h4 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.product-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.bottom-bar {
+    text-align: center; 
+    padding-top: 20px; 
+    border-top: 1px solid #333; 
+    margin-top: 30px; 
+}
+
+.bottom-bar nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+    justify-content: center;
    
 }
+
+a {
+    text-decoration: none; 
+  
+    color: #ffffffb6;
+  }
+  a:hover{
+    color: #bb7b0d;
+  }
+  
+
+.bottom-bar nav li {
+    margin: 0 15px;
+    text-decoration: none; 
+    color: inherit; 
+    
+}
+.bottom-bar p{
+    color: #ffffffb6;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.payment-icons {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.payment-icons img {
+    height: 25px; 
+    margin: 0 5px;
+}
+
+

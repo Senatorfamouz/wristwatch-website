@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="./shop.css">
 </head>
-<body>
+<body style="color: #242424;">
      <!-- envato & buy now -->
   <header class="head">
     <div class="image">
@@ -51,26 +51,21 @@
   <header class="header1">
     <div class="navs">
       <div class="both">
-       <a href="/HOMEWEB/home.html"><nav class="nav">Home</nav></a> 
-        <i class="awe" class="fa-solid fa-chevron-down"></i>
+        <a href="../HOMEWEB/home.html"><nav class="nav">Home</nav></a>
+        <!-- <i style="color: white; font-size: 7px; margin-left: -12px; margin-top: 7px;" class="fa-solid fa-chevron-down"></i> -->
       </div>
       <div class="both">
-       <a href="./shop.html"> <nav class="nav">Shop</nav></a>
-        <i class="awe" class="fa-solid fa-chevron-down"></i>
+       <a href="../SHOPWEB/shop.html"><nav class="nav">Shop</nav></a> 
+       <!-- <i style="color: white; font-size: 7px; margin-left: -12px; margin-top: 7px;" class="fa-solid fa-chevron-down"></i> -->
       </div>
       <div class="both">
-        <a href="/BLOGWEB/BLOG.HTML"><nav class="nav">Blog</nav></a>
-        <i class="awe" class="fa-solid fa-chevron-down"></i>
-      </div>
-      <div class="both">
-        <nav class="nav">Pages</nav>
-        <i class="awe" class="fa-solid fa-chevron-down"></i>
+       <a href="../BLOGWEB/BLOG.HTML"> <nav class="nav">Blog</nav></a>
+       <!-- <i style="color: white; font-size: 7px; margin-left: -12px; margin-top: 7px;" class="fa-solid fa-chevron-down"></i> -->
       </div>
      <div class="both">
-      <nav class="nav">About Us</nav>
+     <a href="../CONTACTWEB/WEB.HTML"> <nav class="nav">About Us</nav></a>
      </div>
-     <div class="both">
-     <a href="/CONTACTWEB/WEB.HTML"> <nav class="nav">Contact Us</nav></a>
+     
      </div>
     </div>
   </header>
@@ -78,9 +73,10 @@
   <section>
     <div class="SHOP">
         <P class="shp">Shop</P>
+        
         <div class="sho">
             <h5 class="sh">home </h5>
-            <i style="color: #fff;" class="fa-solid fa-slash-back"></i>
+            <i class="fa-solid fa-slash-forward"></i>
             <h5 style="color:#bb7b0d ;">shop </h5>
         </div>
     </div>
@@ -89,11 +85,11 @@
   <section>
     <div class="parent">
         <div class="box1">
-            <h1>Layered Navigation</h1>
+            <h3>Layered Navigation</h3>
             <p>Diamonds</p>
             <p>Brown</p>
             <p>christian Dior</p>
-            <h2>Price</h2>
+            
         </div>
         <div class="small_box">
             <i style="color: red; border-radius: 80px;" class="fa-solid fa-rectangle-xmark"></i>
@@ -101,7 +97,7 @@
             <i style="color: red; border-radius: 80px;" class="fa-solid fa-rectangle-xmark"></i>
         </div>
         <div class="box11">
-            <h1>Refine Search</h1>
+            <h3>Refine Search</h3>
             <p>Diamonds (3)</p>
             <p>For Mens's (15)</p>
             <p>For Womens's (16)</p>
@@ -115,13 +111,364 @@
   <section>
     <div class="parent2">
         <div class="BOX1">
-            <div class="round">
-                <i class="fa-solid fa-octagon"></i>
-                <p>$55-$100(3)</p>
+          <div class="filter-section">
+            <h3 style="padding-bottom: 10px; color: #ffffffe8;">Price</h3>
+            <div class="filter-option">
+              <input type="radio" id="price1" name="price" checked>
+              <label for="price1">$55 - $100 <span style="color: #ffffffac;">(3)</span></label>
+            </div>
+            <div class="filter-option">
+              <input type="radio" id="price2" name="price">
+              <label for="price2">$55 - $200 <span style="color: #ffffffac;">(2)</span></label>
+            </div>
+            <div class="filter-option">
+              <input type="radio" id="price3" name="price">
+              <label for="price3">$300 - $500 <span style="color: #ffffffac;">(6)</span></label>
+            </div>
+            <div class="filter-option">
+              <input type="radio" id="price4" name="price">
+              <label for="price4">$700 - $1000 <span style="color: #ffffffac;">(2)</span></label>
+            </div>
+          </div>
+        
+          <div class="filter-section">
+            <h3 style="padding-bottom: 10px;color: #ffffffe8;">Categories</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="cat1" checked>
+              <label for="cat1">Category1</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat2">
+              <label for="cat2">Category2</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat3">
+              <label for="cat3">Category3</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat4">
+              <label for="cat4">Category4</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat5">
+              <label for="cat5">Category5</label>
+            </div>
+          </div>
+
+          <div class="filter-section">
+            <h3 style="padding-bottom: 10px;color: #ffffffe8;">Color</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="cat1">
+              <label for="cat1">black (4)</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat2">
+              <label for="cat2">blue (7)</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat3">
+              <label for="cat3">brown(7)</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat4">
+              <label for="cat4">pink(9)</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat5">
+              <label for="cat5">green(8)</label>
+            </div>
+          </div>
+        
+          <div class="filter-section">
+            <h3 style="padding-bottom: 10px;color: #ffffffe8;">Manufacturer</h3>
+            <div class="filter-option">
+              <input type="checkbox" id="cat1">
+              <label for="cat1">Ferragamo (11)</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat2">
+              <label for="cat2">hermes (9)</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat3">
+              <label for="cat3">loius vuitton(11)</label>
+            </div>
+            <div class="filter-option">
+              <input type="checkbox" id="cat4">
+              <label for="cat4">christian dior(9)</label>
+            </div>
+          </div>
+          <div class="side-photo">
+            <img src="/ASSEST/img-sidebar.webp" alt="" class="size">
+          </div>
+
+        </div>
+        <div class="BOX11">
+          <div class="pagation">
+            <div>
+                <h4 style="font-size: 13px; color: rgb(190, 190, 190);">
+                    Showing 1 to 8 of 15 (2 Pages)
+                </h4>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 5px;">
+                <div style="height: 20px; width: 20px; border-radius: 4px; background-color: rgb(80, 80, 80); display: flex; justify-content: center; align-items: center;">
+                    <h4>
+                        1
+                    </h4>
+
+                </div>
+
+                <div style="height: 20px; width: 20px; border-radius: 4px; background-color: rgb(80, 80, 80); display: flex; justify-content: center; align-items: center;">
+                    <h4>
+                        2
+                    </h4>
+
+                </div>
+
+                <div style="height: 20px; width: 20px; border-radius: 4px; background-color: rgb(80, 80, 80); display: flex; justify-content: center; align-items: center;">
+                    <h4>
+                        3
+                    </h4>
+
+                </div>
+
+                <div style="height: 20px; width: 20px; border-radius: 4px; background-color: rgb(80, 80, 80); display: flex; justify-content: center; align-items: center;">
+                    <h4>
+                        4
+                    </h4>
+
+                </div>
+            </div>
+            </div>
+                  <!-- item 1 -->
+            <div class="product-item-house">
+              <div class="main-house">
+               <div class="discount-badge">-7%</div>
+                <img class="watch-size" src="/ASSEST/watch6.webp" alt="">
+              </div>
+              <h3 style="margin-left: 65px;color: #ffffffaa;font-size: medium;margin-top: 10px;">Cartier</h3>
+              <p style="margin-left: 35px;padding: 0px 10px; color: #ffffff;">Acer Aspire E17</p>
+              <hr>
+              <p style="margin-left: 30px; margin-top: 5px;padding: 5px 15px; color: #bb7b0d;font-weight: 500;">$550.00 <del style="color: #ffffffaa;font-size: 12px;">$700.00</del></p>
+              </div>   
+                 <!-- items 2 -->
+                 <div class="product-item-house">
+                  <div class="main-house">
+                   <div class="discount-badge">-7%</div>
+                    <img class="watch-size" src="/ASSEST/watch 1.webp" alt="">
+                  </div>
+                  <h3 style="margin-left: 65px;color: #ffffffaa;font-size: medium;margin-top: 10px;">Cartier</h3>
+                  <p style="margin-left: 35px;padding: 0px 10px; color: #ffffff;">Acer Aspire E17</p>
+                  <hr>
+                  <p style="margin-left: 30px; margin-top: 5px;padding: 5px 15px; color: #bb7b0d;font-weight: 500;">$550.00 <del style="color: #ffffffaa;font-size: 12px;">$700.00</del></p>
+                  </div>   
+                          <!-- items 3 -->
+               <div class="product-item-house">
+              <div class="main-house">
+               <div class="discount-badge">-7%</div>
+                <img class="watch-size" src="/ASSEST/watch2.webp" alt="">
+              </div>
+              <h3 style="margin-left: 65px;color: #ffffffaa;font-size: medium;margin-top: 10px;">Cartier</h3>
+              <p style="margin-left: 35px;padding: 0px 10px; color: #ffffff;">Acer Aspire E17</p>
+              <hr>
+              <p style="margin-left: 30px; margin-top: 5px;padding: 5px 15px; color: #bb7b0d;font-weight: 500;">$550.00 <del style="color: #ffffffaa;font-size: 12px;">$700.00</del></p>
+              </div>  
+                    <!-- items 4  -->
+              <div class="product-item-house">
+                <div class="main-house">
+                 <div class="discount-badge">-7%</div>
+                  <img class="watch-size" src="/ASSEST/watch3.webp" alt="">
+                </div>
+                <h3 style="margin-left: 65px;color: #ffffffaa;font-size: medium;margin-top: 10px;">Cartier</h3>
+                <p style="margin-left: 35px;padding: 0px 10px; color: #ffffff;">Acer Aspire E17</p>
+                <hr>
+                <p style="margin-left: 30px; margin-top: 5px;padding: 5px 15px; color: #bb7b0d;font-weight: 500;">$550.00 <del style="color: #ffffffaa;font-size: 12px;">$700.00</del></p>
+                </div>   
+                          <!-- items 5 -->
+                <div class="product-item-house">
+                  <div class="main-house">
+                   <div class="discount-badge">-7%</div>
+                    <img class="watch-size" src="/ASSEST/mousareet/1-450x450.jpg" alt="">
+                  </div>
+                  <h3 style="margin-left: 65px;color: #ffffffaa;font-size: medium;margin-top: 10px;">Cartier</h3>
+                  <p style="margin-left: 35px;padding: 0px 10px; color: #ffffff;">Acer Aspire E17</p>
+                  <hr>
+                  <p style="margin-left: 30px; margin-top: 5px;padding: 5px 15px; color: #bb7b0d;font-weight: 500;">$550.00 <del style="color: #ffffffaa;font-size: 12px;">$700.00</del></p>
+                  </div> 
+                       <!-- items 6 -->
+                  <div class="product-item-house">
+                    <div class="main-house">
+                     <div class="discount-badge">-7%</div>
+                      <img class="watch-size" src="/ASSEST/mousareet/8-450x450.jpg" alt="">
+                    </div>
+                    <h3 style="margin-left: 65px;color: #ffffffaa;font-size: medium;margin-top: 10px;">Cartier</h3>
+                    <p style="margin-left: 35px;padding: 0px 10px; color: #ffffff;">Acer Aspire E17</p>
+                    <hr>
+                    <p style="margin-left: 30px; margin-top: 5px;padding: 5px 15px; color: #bb7b0d;font-weight: 500;">$550.00 <del style="color: #ffffffaa;font-size: 12px;">$700.00</del></p>
+                    </div>       
+                              <!-- items 7 -->
+                    <div class="product-item-house">
+                      <div class="main-house">
+                       <div class="discount-badge">-7%</div>
+                        <img class="watch-size" src="/ASSEST/mousareet/12-450x450.jpg" alt="">
+                      </div>
+                      <h3 style="margin-left: 65px;color: #ffffffaa;font-size: medium;margin-top: 10px;">Cartier</h3>
+                      <p style="margin-left: 35px;padding: 0px 10px; color: #ffffff;">Acer Aspire E17</p>
+                      <hr>
+                      <p style="margin-left: 30px; margin-top: 5px;padding: 5px 15px; color: #bb7b0d;font-weight: 500;">$550.00 <del style="color: #ffffffaa;font-size: 12px;">$700.00</del></p>
+                      </div>   
+                              <!-- items 8 -->
+                        <div class="product-item-house">
+                    <div class="main-house">
+                     <div class="discount-badge">-7%</div>
+                      <img class="watch-size" src="/ASSEST/mousareet/14-450x450.jpg" alt="">
+                    </div>
+                    <h3 style="margin-left: 65px;color: #ffffffaa;font-size: medium;margin-top: 10px;">Cartier</h3>
+                    <p style="margin-left: 35px;padding: 0px 10px; color: #ffffff;">Acer Aspire E17</p>
+                    <hr>
+                    <p style="margin-left: 30px; margin-top: 5px;padding: 5px 15px; color: #bb7b0d;font-weight: 500;">$550.00 <del style="color: #ffffffaa;font-size: 12px;">$700.00</del></p>
+                    </div>       
+                            <!-- items 9 -->
+                      <div class="product-item-house">
+                    <div class="main-house">
+                     <div class="discount-badge">-7%</div>
+                      <img class="watch-size" src="/ASSEST/mousareet/9-450x450.jpg" alt="">
+                    </div>
+                    <h3 style="margin-left: 65px;color: #ffffffaa;font-size: medium;margin-top: 10px;">Cartier</h3>
+                    <p style="margin-left: 35px;padding: 0px 10px; color: #ffffff;">Acer Aspire E17</p>
+                    <hr>
+                    <p style="margin-left: 30px; margin-top: 5px;padding: 5px 15px; color: #bb7b0d;font-weight: 500;">$550.00 <del style="color: #ffffffaa;font-size: 12px;">$700.00</del></p>
+                    </div>   
+                    
+              <div class="pagation">
+                <div>
+                    <h4 style="font-size: 13px; color: rgb(190, 190, 190);">
+                        Showing 1 to 8 of 15 (2 Pages)
+                    </h4>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; gap: 5px;">
+                    <div style="height: 20px; width: 20px; border-radius: 4px; background-color: rgb(80, 80, 80); display: flex; justify-content: center; align-items: center;">
+                        <h4>
+                            1
+                        </h4>
+
+                    </div>
+
+                    <div style="height: 20px; width: 20px; border-radius: 4px; background-color: rgb(80, 80, 80); display: flex; justify-content: center; align-items: center;">
+                        <h4>
+                            2
+                        </h4>
+
+                    </div>
+
+                    <div style="height: 20px; width: 20px; border-radius: 4px; background-color: rgb(80, 80, 80); display: flex; justify-content: center; align-items: center;">
+                        <h4>
+                            3
+                        </h4>
+
+                    </div>
+
+                    <div style="height: 20px; width: 20px; border-radius: 4px; background-color: rgb(80, 80, 80); display: flex; justify-content: center; align-items: center;">
+                        <h4>
+                            4
+                        </h4>
+
+                    </div>
+                </div>     
+            </div>       
+        </div>  
+    </div>  
+  </section>
+     
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Mirora</h3>
+            <div class="styling">
+                <p>Address: 123 Main Street, Anytown, <br> CA 12345-USA</p>
+                <p>Phone: (012) 800-456789</p>
+                <p>Fax: (012) 800-456789</p>
+                <p>Email: Contact@plazathemes.com</p>
+            </div>
+           
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
             </div>
         </div>
-        <div class="BOX11"></div>
+        <div class="footer-section">
+            <h3>Information</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Delivery Information</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">Gift Certificates</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Extras</h3>
+            <ul>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">Gift Certificates</a></li>
+                <li><a href="#">Affiliate</a></li>
+                <li><a href="#">Specials</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Returns</a></li>
+            </ul>
+        </div>
+        <div class="footer-section custom-products">
+            <h3>Custom Products</h3>
+            <div class="product">
+                <img src="/ASSEST/watch6.webp" alt="Product 1">
+                <div class="product-details">
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <h4>Acer Aspire E 15</h4>
+                    <p style="color: #a8741a;">$550.00 <del style="color: #ffffffd0; font-size: 12px;">$700.00</del></p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="/ASSEST/watch 1.webp" alt="Product 2">
+                <div class="product-details">
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <i class="fa-solid fa-star" style="color: #a8741a;"></i>
+                    <h4>Acer Aspire E 15</h4>
+                    <p style="color: #a8741a; font-size: 14px;">$550.00 <del style="color: #ffffffdf;  font-size: 12px;">$700.00</del></p>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+    <div class="bottom-bar">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Online Store</a></li>
+                <li><a href="#">Promotion</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+        <p>&copy; Mirora 2021 Made With <i class="fa fa-heart"></i> <span style="color: #a8741a;"> By HasThemes</span></p>
+        <div class="payment-icons">
+            <img src="/ASSEST/mousareet/payment.png" alt="Visa">
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

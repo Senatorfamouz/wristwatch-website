@@ -10,7 +10,7 @@ body{
 .container{
     width: 100%;
     height: 100vh;
-    background-image: url(/ASSEST/Breguet-Tradition.webp);
+    background-image: url(../ASSEST/Breguet-Tradition.webp);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat; 
